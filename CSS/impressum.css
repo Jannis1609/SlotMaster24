@@ -1,0 +1,58 @@
+/* Impressum Seite Formatierung */
+.impressum-container {
+  max-width: var(--max-width);
+  margin-inline: auto;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+  padding-inline: 1rem;
+  padding-block: 1rem;
+  background: #fff;
+}
+
+.impressum-container h1 {
+  color: #7C4DFF;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-family: "Bebas Neue", sans-serif;
+  text-align: center;
+}
+
+.impressum-container h3 {
+  color: #333333;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-family: "Poppins", sans-serif;
+  text-align: left;
+}
+
+.impressum-container p,
+.impressum-container ul,
+.impressum-container li {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.impressum-container ul {
+  padding-left: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.impressum-container li {
+  margin-bottom: 0.3rem;
+}
+
+.impressum-container strong {
+  color: #5E31E6;
+}
+
+@media (max-width: 600px) {
+  .impressum-container {
+    padding-inline: 0.5rem;
+    padding-block: 0.5rem;
+  }
+  .impressum-container h1 {
+    font-size: 2rem;
+  }
+}

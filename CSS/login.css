@@ -1,0 +1,188 @@
+/* Zurück-Button oben rechts */
+.back-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: #7C4DFF;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+/* ===== LOGIN SEITE STYLES ===== */
+
+/* Haupt-Container für die Login-Seite */
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  padding: 7rem 1rem 2rem;
+}
+
+.container {
+  width: min(420px, 100%);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 24px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.top-header {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.container header {
+  color: var(--text-dark);
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  font-family: var(--header-font);
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+.container span {
+  color: var(--text-light);
+  font-size: small;
+  display: flex;
+  justify-content: center;
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.input {
+  height: 48px;
+  width: 100%;
+  border: 1px solid rgba(0,0,0,0.1);
+  outline: none;
+  border-radius: 12px;
+  color: var(--text-dark);
+  padding: 0 12px 0 42px;
+  background: #fff;
+  box-sizing: border-box;
+  transition: border-color .2s, box-shadow .2s;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+}
+
+.input:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 4px rgba(124,77,255,0.15);
+}
+
+.input-field i {
+  position: absolute;
+  left: 17px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-light);
+  pointer-events: none;
+  font-size: 1.2rem;
+}
+
+.input::placeholder {
+  color: var(--text-light);
+  font-family: "Poppins", sans-serif;
+}
+
+.submit {
+  width: 100%;
+  height: 48px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--white);
+  background: var(--primary-color);
+  cursor: pointer;
+  transition: background .2s, transform .02s;
+  font-family: "Poppins", sans-serif;
+  margin-top: 0.5rem;
+}
+
+.submit:hover {
+  background: var(--primary-color-dark);
+}
+
+.submit:active {
+  transform: translateY(1px);
+}
+
+.switch {
+  margin-top: .5rem;
+  text-align: center;
+  color: var(--text-light);
+  font-size: .95rem;
+}
+
+.switch a {
+  color: var(--primary-color);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.switch a:hover {
+  color: var(--primary-color-dark);
+}
+
+/* ===== RESPONSIVE DESIGN FÜR LOGIN SEITE ===== */
+
+/* Tablet (width <= 1024px) */
+@media (width <= 1024px) {
+  .container {
+    padding: 20px;
+  }
+}
+
+/* Mobile (width <= 768px) */
+@media (width <= 768px) {
+  .box {
+    padding: 5rem 1rem 2rem;
+  }
+  
+  .container {
+    margin: 0 1rem;
+  }
+  
+  .container header {
+    font-size: 26px;
+  }
+}
+
+/* Small Mobile (width <= 480px) */
+@media (width <= 480px) {
+  .container {
+    padding: 20px 16px;
+  }
+  
+  .input {
+    height: 44px;
+    font-size: 0.9rem;
+  }
+  
+  .submit {
+    height: 44px;
+    font-size: 0.9rem;
+  }
+  
+  .switch {
+    font-size: 0.9rem;
+  }
+  
+  .container header {
+    font-size: 24px;
+  }
+}

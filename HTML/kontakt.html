@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="/CSS/global.css"/>
+    <link rel="stylesheet" href="/CSS/kontakt.css" />
+    <title>SlotMaster24</title>
+  </head>
+  <body>
+
+    <!-- NavBar -->
+    <nav>
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a href="/HTML/home.html">SlotMaster<span>24</span></a>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <span><i class="ri-menu-line"></i></span>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="/HTML/home.html">Home</a></li>
+        <li><a href="/HTML/spiele.html">Spiele</a></li>
+        <li><a href="/HTML/überuns.html">Über uns</a></li>
+        <li><a href="/HTML/kontakt.html">Kontakt</a></li>
+      </ul>
+      <div class="nav__btns">
+        <a href="registrierung.html" class="btn sign__up">Registrierung</a>
+        <a href="login.html" class="btn sign__in">Anmelden</a>
+      </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main class="kontakt-container">
+      <h1>Kontakt</h1>
+      <p>Du hast Fragen, Feedback oder möchtest uns einfach erreichen? Nutze das Kontaktformular oder schreibe uns direkt eine E-Mail.</p>
+      <form class="kontakt-form" action="#" method="post">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">E-Mail</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="nachricht">Nachricht</label>
+          <textarea id="nachricht" name="nachricht" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn primary">Absenden</button>
+      </form>
+      <div class="kontakt-info">
+        <p>Oder direkt per E-Mail: <a href="mailto:kontakt@slotmaster24.de">kontakt@slotmaster24.de</a></p>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 SlotMaster24 – Alle Rechte vorbehalten</p>
+      <p>
+        <a href="/HTML/impressum.html">Impressum</a> |
+        <a href="/HTML/datenschutz.html">Datenschutz</a> |
+        <a href="/HTML/kontakt.html">Kontakt</a>
+      </p>
+    </footer>
+  </body>
+</html>
